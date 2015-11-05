@@ -103,7 +103,7 @@
     if (_buttonBarView) return _buttonBarView;
     UICollectionViewFlowLayout * flowLayout = [[UICollectionViewFlowLayout alloc] init];
     [flowLayout setScrollDirection:UICollectionViewScrollDirectionHorizontal];
-    [flowLayout setSectionInset:UIEdgeInsetsMake(0, 35, 0, 35)];
+    [flowLayout setSectionInset:UIEdgeInsetsMake(0, self.view.frame.size.width / 2 - 60, 0, 40)];
     _buttonBarView = [[XLButtonBarView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 44.0f) collectionViewLayout:flowLayout];
     _buttonBarView.backgroundColor = [UIColor orangeColor];
     _buttonBarView.selectedBar.backgroundColor = [UIColor blackColor];
